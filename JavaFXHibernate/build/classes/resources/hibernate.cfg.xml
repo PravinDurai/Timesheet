@@ -1,0 +1,63 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!-- 
+<hibernate-configuration>
+
+    <session-factory>
+
+
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://ec2-174-129-255-4.compute-1.amazonaws.com:5432/dcccsh79fr72u5?sslmode=require&amp;serverTimezone=UTC</property>
+        <property name="connection.username">lcrquvzbkaxwps</property>
+        <property name="connection.password">385123ae2ea6da432bbb359acc15ab6134bb3d9a63d853359fbd88a8b3bb5fc8</property>
+
+
+        
+        <property name="connection.pool_size">1</property>
+
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+
+        <property name="show_sql">true</property>
+
+
+		<property name="current_session_context_class">thread</property>
+ 
+    </session-factory>
+
+</hibernate-configuration>
+
+ -->
+ 
+<!-- My SQL Configuration  -->
+
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/sandhata?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">Pravin</property>
+        <property name="connection.password">hibernate@1234</property>
+
+        
+        
+        <property name="connection.pool_size">1</property>
+        
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        
+        <property name="show_sql">true</property>
+
+		
+		<property name="current_session_context_class">thread</property>
+ 
+    </session-factory>
+
+</hibernate-configuration> 
+
+<!-- com.mysql.cj.jdbc.Driver -->
